@@ -1119,7 +1119,7 @@ namespace Photon.Pun
         ///
         /// In general check out the <see cref="DisconnectCause"/> from the <see cref="IConnectionCallbacks.OnDisconnected"/> callback.
         ///  </remarks>
-        public static bool ConnectUsingSettings(string v)
+        public static bool ConnectUsingSettings()
         {
             if (PhotonServerSettings == null)
             {
