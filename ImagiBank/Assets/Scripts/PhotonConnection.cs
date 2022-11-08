@@ -17,6 +17,10 @@ public class PhotonConnection : MonoBehaviourPunCallbacks
     }
     public override void OnConnected()
     {
-        Debug.Log("Connected to the server");
+        Debug.Log("Server is Available");
+    }
+    public override void OnConnectedToMaster()
+    {
+        Debug.Log("Successfully connected to the master");
     }
 }
