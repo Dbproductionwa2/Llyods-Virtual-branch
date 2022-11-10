@@ -10,7 +10,7 @@ public class UIInteractor : MonoBehaviour
 
     private void Start()
     {
-        OtpAuth.onClick.AddListener(OtpAuthVerify);
+       // OtpAuth.onClick.AddListener(OtpAuthVerify);
     }
     public void OnEnable()
     {

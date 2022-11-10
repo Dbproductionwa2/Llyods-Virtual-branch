@@ -11,12 +11,12 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/DeskApp.unity
     guid: 615885953b609224d82eda4b39dc715e
-  - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
     path: Assets/Scenes/common_lobby.unity
     guid: e275c744b762d724bbfb910f439742af
+  - enabled: 1
+    path: Assets/Scenes/Office.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 6433c81c9ad03ac4ea01365dab1ae20b, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 66ba48c7f6795054daa2861aa773160a, type: 2}
