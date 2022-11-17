@@ -20,7 +20,7 @@ public class VRKeyboardManager : MonoBehaviour
 	public GameObject localVRPlayerCamera;
 
 
-	//public Vector3 relativePosition = new Vector3(0,1,2);
+	public Vector3 relativePosition = new Vector3(0,1,2);
 
 	public TMP_InputField playerNameInputField;
 
@@ -37,9 +37,13 @@ public class VRKeyboardManager : MonoBehaviour
 	/// but you can also use the inspector.
 	/// </summary>
 	public void EnableVRKeyboard()
-	{		
+	{
+		localVRPlayerCamera = GameObject.Find("/Generic VR Player(Clone)/XR Rig/Camera Offset/Main Camera");
+		leftBaseController = GameObject.Find("/Generic VR Player(Clone)/XR Rig/Camera Offset/LeftHand Parent/LeftHand Base Controller");
+		rightBaseController = GameObject.Find("/Generic VR Player(Clone)/XR Rig/Camera Offset/Right Hand Parent/RightHand Base Controller");
+
 		keyboard.Enable();
-		keyboard.SetPlaceholderMessage("Input the text");
+		keyboard.SetPlaceholderMessage("What should we call you?");
 
 		keyboard.OnUpdate.AddListener(HandleUpdate);
 		keyboard.OnSubmit.AddListener(HandleSubmit);
@@ -49,7 +53,7 @@ public class VRKeyboardManager : MonoBehaviour
 		AttachMarrets();
 
 		leftBaseController.GetComponent<XRRayInteractor>().enabled = false;
-		rightBaseController.GetComponent<XRRayInteractor>().enabled = false;
+		//rightBaseController.GetComponent<XRRayInteractor>().enabled = false;
 
 	}
 
